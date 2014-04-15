@@ -18,7 +18,11 @@
 ///////////////////////////////////////////////////////////////////////
 
 #include "GVF.h"
+
+#ifdef USE_MAXMSP
 #include "maxcpp6.h"
+#endif
+
 #include <string.h>
 #include <stdio.h>
 #include <iostream>

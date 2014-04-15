@@ -32,8 +32,17 @@
 #define VDSPOPTM 0
 #define GESTLEARNT 8
 
+//#define USE_MAXMSP
+
 #if BOOSTLIB
 #include <boost/random.hpp>
+#endif
+
+#ifndef USE_MAXMSP
+static void post(const char * format, ...){
+    va_list args;
+    printf(format, args);
+}
 #endif
 
 using namespace std;
